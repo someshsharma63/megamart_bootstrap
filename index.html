@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megamart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <!-- top navbar -->
+     <div class="top_navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <div class="welcome">
+                        <p>Welcome to worldwide Megamart!</p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="delivery">
+                        <span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17935 7.79349C3.19016 4.61305 5.77717 2.04355 8.95761 2.05432C12.1381 2.06516 14.7075 4.65218 14.6968 7.83262V7.89784C14.6576 9.96523 13.5033 11.8761 12.088 13.3696C11.2787 14.21 10.3749 14.9541 9.39457 15.587C9.13245 15.8137 8.74365 15.8137 8.48153 15.587C7.02015 14.6358 5.73755 13.4349 4.6924 12.0391C3.76086 10.8221 3.23198 9.34481 3.17935 7.81305V7.79349Z" stroke="#008ECC" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.93806 9.75002C9.95739 9.75002 10.7837 8.92369 10.7837 7.90437C10.7837 6.88504 9.95739 6.05872 8.93806 6.05872C7.91873 6.05872 7.09241 6.88504 7.09241 7.90437C7.09241 8.92369 7.91873 9.75002 8.93806 9.75002Z" stroke="#008ECC" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        </span>
+                        <p>Deliver to <span>423651</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="delivery">
+                        <img src="./images/Location.svg" alt="">
+                        <p>Track your order</p>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="delivery">
+                        <p>All Offers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ------------------- -->
+      <!-- top_header -->
+       <div class="top_header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <h1> <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="10" fill="#F3F9FB"/>
+                        <line x1="12.75" y1="15.25" x2="37.25" y2="15.25" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="12.75" y1="24.25" x2="30.1591" y2="24.25" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="12.75" y1="33.25" x2="24.25" y2="33.25" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                           MegaMart</h1>
+                </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <form class="d-flex nav-search">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.82491 15.5664C12.5481 15.5664 15.5663 12.5481 15.5663 8.82494C15.5663 5.10176 12.5481 2.08353 8.82491 2.08353C5.10173 2.08353 2.0835 5.10176 2.0835 8.82494C2.0835 12.5481 5.10173 15.5664 8.82491 15.5664Z" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.5137 13.8638L16.1567 16.5" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                        <input class="form-control me-2" type="search" placeholder="Search essentials, groceries and more..." aria-label="Search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 4.75C22 5.16421 21.6642 5.5 21.25 5.5L6.75 5.5C6.33579 5.5 6 5.16421 6 4.75C6 4.33578 6.33579 4 6.75 4H21.25C21.6642 4 22 4.33579 22 4.75ZM22 11.75C22 12.1642 21.6642 12.5 21.25 12.5L6.75 12.5C6.33579 12.5 6 12.1642 6 11.75C6 11.3358 6.33579 11 6.75 11L21.25 11C21.6642 11 22 11.3358 22 11.75ZM21.25 19.5C21.6642 19.5 22 19.1642 22 18.75C22 18.3358 21.6642 18 21.25 18L6.75 18C6.33579 18 6 18.3358 6 18.75C6 19.1642 6.33579 19.5 6.75 19.5L21.25 19.5Z" fill="#008ECC"/>
+                            <circle cx="3" cy="5" r="1" fill="#008ECC"/>
+                            <circle cx="3" cy="12" r="1" fill="#008ECC"/>
+                            <circle cx="3" cy="19" r="1" fill="#008ECC"/>
+                            </svg>
+                            
+                      </form>
+        
+                  <li class="nav-item user-actions">
+                    <a class="nav-link" href="#">  <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="8" r="4.75" stroke="#008ECC" stroke-width="1.5"/>
+                        <path d="M6 21C6 21 6 19.75 6 18.5C6 17.25 8.24914 16 12 16C15.7509 16 18 17.25 18 18.5C18 20.375 18 21 18 21" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span>  Sign Up/Sign In</a>
+                  </li>
+                  <li class="nav-item user-actions">
+                    <a class="nav-link" href="#"> <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.4223 19.8203C7.8443 19.8203 8.1873 20.1633 8.1873 20.5853C8.1873 21.0073 7.8443 21.3493 7.4223 21.3493C7.0003 21.3493 6.6583 21.0073 6.6583 20.5853C6.6583 20.1633 7.0003 19.8203 7.4223 19.8203Z" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6747 19.8203C19.0967 19.8203 19.4397 20.1633 19.4397 20.5853C19.4397 21.0073 19.0967 21.3493 18.6747 21.3493C18.2527 21.3493 17.9097 21.0073 17.9097 20.5853C17.9097 20.1633 18.2527 19.8203 18.6747 19.8203Z" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.7499 3.25L4.8299 3.61L5.7929 15.083C5.8709 16.018 6.6519 16.736 7.5899 16.736H18.5019C19.3979 16.736 20.1579 16.078 20.2869 15.19L21.2359 8.632C21.3529 7.823 20.7259 7.099 19.9089 7.099H5.1639" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.1254 10.795H16.8984" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span>    Cart</a>
+                  </li>
+                </ul>
+             
+              </div>
+            </div>
+          </nav>
+       </div>
+
+       <!-- downnavbar ----------------->
+        <div class="down_navbar">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-around">
+                    
+                        <div class="down_content">
+                            <div class="dropdown activate">
+                                <button class="btn btn-secondary dropdown-toggle groceries_item" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Groceries
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                   
+                    
+                        <div class="down_content">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Premium Fruits
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                   
+                    
+                        <div class="down_content">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home & Kitchen
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                   
+                    
+                        <div class="down_content">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fashion
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                   
+                    
+                        <div class="down_content">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Electronics
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    
+                    
+                        <div class="down_content">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Beauty
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    
+                    
+                        <div class="down_content">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home Improvement
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    
+                   
+                        <div class="down_content">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sports, Toys & Luggage
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- slider section starts -->
+         
+        <div class="slider_section">
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="banner_image">
+                            <img  src="./images/banner_image.png" class="d-block" alt="...">
+                        </div>
+                     
+                        <div class="carousel-caption d-none d-md-block">
+                        <p>Best Deal Online on smart watches</p>
+                          <h5>SMART WEARABLE.</h5>
+                        <p>UP to 80% OFF</p>
+
+                       
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="banner_image">
+                            <img  src="./images/banner_image.png" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Best Deal Online on smart watches</p>
+                              <h5>SMART WEARABLE.</h5>
+                            <p>UP to 80% OFF</p>
+    
+                           
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="banner_image">
+                            <img  src="./images/banner_image.png" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Best Deal Online on smart watches</p>
+                              <h5>SMART WEARABLE.</h5>
+                            <p>UP to 80% OFF</p>
+                            </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 5L8.5 12L15.5 19" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                     
+                            
+                      <span class="carousel-control-next-icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                      </span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+
+        <!-- grab the deal -->
+
+        <div class="grab_deal">
+            <div class="container">
+                 <div class="row smartphones-view">
+                    <div class="col-lg-6">
+                        <div class="smartphone">
+                            <h1>Grab the best deal on <span>Smartphones</span></h1>
+                            <hr>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="smartphone_view newview">
+                            <h5><a href="#">View All</a></h5>   
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.375 3.75L11.625 9L6.375 14.25" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="item_deal">
+                            <div class="card">
+                                <div class="discount_coupan">
+                                    <h4>56% OFF</h4> 
+                                </div>
+                                <div class="items_image">
+                                    <div class="gallaxy_s">
+                                        <img src="./images/image 3-1.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body items">
+                                  <h4 class="card-title">Galaxy S22 Ultra</h4>
+                                  <span id="item_first">₹32999</span>
+                                  <span>₹74999</span>
+                                  <h5>Save - ₹32999</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item_deal">
+                            <div class="card">
+                                <div class="discount_coupan">
+                                    <h4>56% OFF</h4> 
+                                </div>
+                                <div class="items_image">
+                                    <div class="gallaxy_s">
+                                    <img src="./images/image 3-2.png" class="card-img-top" alt="...">
+                                </div>
+                                </div>
+                                <div class="card-body items">
+                                  <h4 class="card-title">Galaxy S22 Ultra</h4>
+                                  <span id="item_first">₹32999</span>
+                                  <span>₹74999</span>
+                                  <h5>Save - ₹32999</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item_deal">
+                            <div class="card">
+                                <div class="discount_coupan">
+                                    <h4>56% OFF</h4> 
+                                </div>
+                                <div class="items_image">
+                                    <div class="gallaxy_s">
+                                    <img src="./images/image 3-3.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body items">
+                                  <h4 class="card-title">Galaxy S22 Ultra</h4>
+                                  <span id="item_first">₹32999</span>
+                                  <span>₹74999</span>
+                                  <h5>Save - ₹32999</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item_deal">
+                            <div class="card">
+                                <div class="discount_coupan">
+                                    <h4>56% OFF</h4> 
+                                </div>
+                                <div class="items_image">
+                                    <div class="gallaxy_s">
+                                    <img src="./images/image 3-1.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body items">
+                                  <h4 class="card-title">Galaxy S22 Ultra</h4>
+                                  <span id="item_first">₹32999</span>
+                                  <span>₹74999</span>
+                                  <h5>Save - ₹32999</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item_deal">
+                            <div class="card">
+                                <div class="discount_coupan">
+                                    <h4>56% OFF</h4> 
+                                </div>
+                                <div class="items_image">
+                                    <div class="gallaxy_s">
+                                    <img src="./images/image 3-2.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body items">
+                                  <h4 class="card-title">Galaxy S22 Ultra</h4>
+                                  <span id="item_first">₹32999</span>
+                                  <span>₹74999</span>
+                                  <h5>Save - ₹32999</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------ -->
+
+        <!-- shop from top category -->
+        <div class="grab_deal">
+            <div class="container">
+                 <div class="row smartphones-view">
+                    <div class="col-lg-6">
+                        <div class="smartphone top_cate">
+                            <h1>Shop From<span> Top Categories</span></h1>
+                            <hr>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="smartphone_view newview">
+                            <h5><a href="#">View All</a></h5>   
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.375 3.75L11.625 9L6.375 14.25" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        
+                        
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-2">
+                        <div class="top_categories">
+                             <div class="inner_cate">
+                                <div class="inner_categories_image">
+                                    <img src="./images/image 3.png" alt="">
+                                </div>
+                                
+                             </div> 
+                             <h3>Mobile</h3>  
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="top_categories">
+                             <div class="inner_cate">
+                                <div class="inner_categories_image">
+                                    <img src="./images/cosmetic.png" alt="">
+                                </div>
+                                
+                             </div> 
+                             <h3>Cosmetics</h3>  
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="top_categories">
+                             <div class="inner_cate">
+                                <div class="inner_categories_image">
+                                    <img src="./images/electonicss.png" alt="">
+                                </div>
+                                
+                             </div> 
+                             <h3>Electronics</h3>  
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="top_categories">
+                             <div class="inner_cate">
+                                <div class="inner_categories_image">
+                                    <img src="./images/furnituree.png" alt="">
+                                </div>
+                                
+                             </div> 
+                             <h3>Furniture</h3>  
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="top_categories">
+                             <div class="inner_cate">
+                                <div class="inner_categories_image">
+                                    <img src="./images/watches.png" alt="">
+                                </div>
+                                
+                             </div> 
+                             <h3>Watches</h3>  
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="top_categories">
+                             <div class="inner_cate">
+                                <div class="inner_categories_image">
+                                    <img src="./images/decor.png" alt="">
+                                </div>
+                                
+                             </div> 
+                             <h3>Decor</h3>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------- -->
+         <!-- top electronic brands -->
+         <div class="grab_deal ">
+            <div class="container">
+         <div class="row smartphones-view">
+            <div class="col-lg-6">
+                <div class="smartphone electroic_line">
+                    <h1>Top <span> Electronics Brand</span></h1>
+                    <hr>
+                    
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="smartphone_view newview">
+                    <h5><a href="#">View All</a></h5>   
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.375 3.75L11.625 9L6.375 14.25" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="electonic_brand">
+                    <img src="./images/iphone.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="electonic_brand">
+                    <img src="./images/realme.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="electonic_brand">
+                    <img src="./images/mi.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- -------------------------- -->
+
+        <!-- daily essential -->
+        <div class="grab_deal daily_essential">
+            <div class="container">
+        <div class="row smartphones-view">
+            <div class="col-lg-6">
+                <div class="smartphone grab_line">
+                    <h1>Daily<span> Essentials</span></h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="smartphone_view newview">
+                    <h5><a href="#">View All</a></h5>   
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.375 3.75L11.625 9L6.375 14.25" stroke="#008ECC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="daily_use">
+                    <div class="card" >
+                        <img src="./images/dailyessential.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                        <div class="card-body">
+                            <p class="card-text">Daily Essential</p>
+                          <h5 class="card-title off">Up to 50% OFF</h5>
+                        </div>
+                     
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="daily_use">
+                    <div class="card" >
+                        <img src="./images/vegetable.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                        <div class="card-body">
+                            <p class="card-text">Vegetables</p>
+                          <h5 class="card-title off">Up to 50% OFF</h5>
+                        </div>
+                     
+              
+             
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="daily_use">
+                    <div class="card" >
+                        <img src="./images/fruits.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                        <div class="card-body">
+                            <p class="card-text">Fruits</p>
+                          <h5 class="card-title off">Up to 50% OFF</h5>
+                        </div>
+                     
+              
+             
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="daily_use">
+                    <div class="card" >
+                        <img src="./images/strawberry.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                        <div class="card-body">
+                            <p class="card-text">Strowberry</p>
+                          <h5 class="card-title off">Up to 50% OFF</h5>
+                        </div>
+                     
+              
+             
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="daily_use">
+                    <div class="card" >
+                        <img src="./images/mango.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                        <div class="card-body">
+                            <p class="card-text">Mango</p>
+                          <h5 class="card-title off">Up to 50% OFF</h5>
+                        </div>
+             
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="daily_use">
+                    <div class="card" >
+                        <img src="./images/cherry.png  " class="card-img-top" alt="...">
+                    </div>
+                </div>
+                        <div class="card-body">
+                            <p class="card-text">Cherry</p>
+                          <h5 class="card-title off">Up to 50% OFF</h5>
+                        </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="logo footer_logo">
+                                <h1>MegaMart</h1>
+                            </div> 
+                            <div class="contac_info">
+                                <h3>Contact Us</h3>
+
+                                <div class="contact_info">
+                                   <h4>   <span> </span> Whats App</h4>
+                                    <a href="">+1 202-918-2132</a>
+                                </div>
+                                <div class="contact_info">
+                                    <span> </span> <h4>Call Us</h4>
+                                    <a href="">+1 202-918-2132</a>
+                                </div>
+                            </div>
+                            <div class="contac_info download">
+                                <h4>Download App</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="app_store">
+                                            <img src="./images/app_store.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="app_store">
+                                            <img src="./images/google_play.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="popular_categories">
+                                <h3>Most Popular Categories</h3>
+                                <ul>
+                                  <li><a href="#">staples</a></li>
+                                  <li><a href="#">beverages</a></li>
+                                  <li><a href="#">persnol care</a></li>
+                                  <li><a href="#">home care</a></li>
+                                  <li><a href="#">baby care</a></li>
+                                  <li><a href="#">vegetables & fruits</a></li>
+                                  <li><a href="#">snacks & foods </a></li>
+                                  <li><a href="#">dairy & bakers </a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="popular_categories">
+                                <h3>Customer Services</h3>
+                                <ul>
+                                  <li><a href="#">About Us</a></li>
+                                  <li><a href="#">Terms & Condition</a></li>
+                                  <li><a href="#">FAQ</a></li>
+                                  <li><a href="#">privacy policy</a></li>
+                                  <li><a href="#">e-waste policy</a></li>
+                                  <li><a href="#">vegetables & fruits</a></li>
+                                  <li><a href="#">cancellation return policy </a></li>
+                                </ul>
+                             </div>
+                        </div>
+                      
+                    </div>
+                </div>
+              
+            </div>
+            <hr>
+            <div class="reserve_right">
+                <p>© 2022 All rights reserved. Reliance Retail Ltd.</p>
+            </div>
+        </footer>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
